@@ -16,3 +16,6 @@ padding: 2rem;
     h3 {
         font-size: 1.25rem;
     }
+    img {
+        border-radius: 50%;
+      }
