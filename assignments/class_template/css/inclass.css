@@ -34,9 +34,50 @@ h3 {
     color: var(--primary-color)
 }
 
-p {
+p, ul, ol {
     font-size: 1.25rem;
     line-height: 1.75rem;
     color: var(--neutral-grey)
 }
+
+img {
+    max-width: 100%;
+}
+
+/* Layout */
+.side-id {
+    background-color: red;
+    width: min(95%, 0.75rem);
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.menu > * {
+    grid-column: span 12;
+}
+
+
+/* Desktop Layout */
+@media screen and (min-width: 40rem)
+{
+        .header { 
+            grid-column: 1 / span 6;
+        }
+
+        .nav { 
+            grid-column: 7 / span 6;
+        }
+
+        .company { 
+            grid-column: 1 / span 8;
+        }
+
+        .company-image { 
+            grid-column: 9 / span 4;
+        }
+}
+
+
 
