@@ -46,7 +46,7 @@ img {
 
 
 /* Layout */
-.side-id {
+.container {
     background-color: red;
     width: min(95%, 0.75rem);
     margin: 0 auto;
@@ -55,7 +55,7 @@ img {
     grid-template-columns: repeat(12, 1fr);
 }
 
-.menu > * {
+.container > * {
     grid-column: span 12;
 }
 
@@ -63,12 +63,14 @@ img {
 /* Desktop Layout */
 @media screen and (min-width: 40rem)
 {
-        .header { 
+        .site-id { 
             grid-column: 1 / span 6;
+            background-color: #033f5f;
         }
 
-        .nav { 
+        .menu { 
             grid-column: 7 / span 6;
+            background-color: green;
         }
 
         .company { 
