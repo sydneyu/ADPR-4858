@@ -48,7 +48,7 @@ img {
 /* Layout */
 .container {
     background-color: red;
-    width: min(95%, 0.75rem);
+    width: min(95%, 75rem);
     margin: 0 auto;
     display: grid;
     gap: 1.5rem;
@@ -58,7 +58,7 @@ img {
 .container > * {
     grid-column: span 12;
 }
-
+                                                       
 
 /* Desktop Layout */
 @media screen and (min-width: 40rem)
