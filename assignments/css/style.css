@@ -1,7 +1,11 @@
 body {
     margin: 0 10%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("../images/bg.png");
     }
+.container{
+    background-color: white;
+}
 header {
 background-color: rgb(183, 224, 240);
 color: white;
