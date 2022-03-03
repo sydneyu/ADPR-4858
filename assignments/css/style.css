@@ -51,7 +51,9 @@ padding: 2rem;
 
 @media screen and (min-width: 40rem) {
     .col-span-8{
-        grid-column: span 8; }
-    .col-span-8{
-        grid-column: span 4; }
+        grid-column: span 8; 
+    }
+    .col-span-4{
+        grid-column: span 4; 
+    }
 }
