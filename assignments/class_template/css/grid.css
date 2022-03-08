@@ -1,0 +1,115 @@
+:root {
+    --primary-color: #033f5f;
+    --second-color: #007CBC;
+    --neutral-grey: #747e83;
+    --neutral-light: #ffffff;
+    --highlight-color: #f5ba36;
+
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body{
+    margin: 0;
+
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--neutral-light)
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--primary-color)
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color)
+}
+
+p, ul, ol {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: var(--neutral-grey)
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* Layout */
+.container {
+    background-color:red;
+    width: min(95%, 75rem);
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.container > * {
+    grid-column: span 12;
+}
+                                                       
+
+/* Desktop Layout */
+@media screen and (min-width: 40rem)
+{
+
+        .col-span-4{
+            grid-column: span 4; 
+            background-color: #4b3d37;
+        }
+
+
+        .col-span-2{
+            grid-column: span 2; 
+        }
+
+
+        .nav { 
+            grid-column: 1 / span 1;
+            background-color: #033f5f;
+        }
+        .site-id {
+            grid-column: 2 / span 4;
+            background-color: #d007a8;
+            color: black;
+        }
+        .main { 
+            grid-column: 1 / span 12;
+            background-color: green;
+            padding-bottom: 15rem;
+        }
+
+        .socials { 
+            grid-column: 1 / span 4;
+            background-color: #2aa933;
+        }
+        .menu{
+            grid-column: 5 / span 4;
+            background-color: #6a2aa9;
+        }
+
+        .copyright { 
+            grid-column: 9 / span 4;
+            background-color: aqua;
+        }
+}
+
+.green {background-color: #2aa933;}
+.red {background-color: red;}
+.pink {background-color:pink}
+.blue {background-color: blue;}
+
+
+
+
