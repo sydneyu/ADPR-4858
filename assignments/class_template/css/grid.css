@@ -47,7 +47,7 @@ img {
 
 /* Layout */
 .container {
-    background-color:red;
+    background-color:rgb(215, 215, 215);
     width: min(95%, 75rem);
     margin: 0 auto;
     display: grid;
@@ -64,14 +64,15 @@ img {
 @media screen and (min-width: 40rem)
 {
 
-        .col-span-4{
-            grid-column: span 4; 
-            background-color: #4b3d37;
+     }
+
+        .col-span-6{
+            grid-column: span 6; 
+            background-color: #eb38a4;
         }
 
-
-        .col-span-2{
-            grid-column: span 2; 
+        .col-span-3{
+            grid-column: span 3; 
         }
 
 
