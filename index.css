@@ -1,0 +1,242 @@
+:root {
+    --primary-color: #AA8383;
+    --second-color: #007CBC;
+    --neutral-grey: #747e83;
+    --neutral-light: #ffffff;
+    --highlight-color: #f5ba36;
+
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: var(--primary-color); 
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: white; /* Add a dark-grey background on hover */
+    color: var(--primary-color);
+  }
+
+
+
+
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0;
+    background-image:  linear-gradient(#FCD8D4, #FDF6F0, #F8E2CF, #FCD8D4, #F6C7AD);
+
+}
+
+h1 {
+    font-family: bebas-neue, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+    color: var(--primary-color)
+}
+
+h2 {
+    font-family: shelby, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    color: var(--primary-color)
+}
+
+h3 {
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+}
+
+h4 {
+    font-family: bebas-neue, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: var(--primary-color)
+}
+
+
+p, ul, ol {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: var(--neutral-grey)
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* Layout */
+.container {
+    width: min(95%, 75rem);
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.container > * {
+    grid-column: span 12;
+}
+                                                       
+
+/* Desktop Layout */
+@media screen and (min-width: 40rem)
+{
+
+     }
+
+
+        .col-span-1{
+            grid-column: span 1; 
+            background-color: #65eb38;
+        }
+        .col-span-2{
+            grid-column: span 2; 
+            background-color: #38ebe8;
+        }
+        .col-span-3{
+            grid-column: span 3; 
+            background-color: #8612b3;
+        }
+        .col-span-4{
+            grid-column: span 4; 
+            background-color: #bf7a20;
+        }
+        .col-span-5{
+            grid-column: span 5; 
+            background-color: #bf203d;
+        }
+        .col-span-6{
+            grid-column: span 6; 
+            background-color: lavender;
+        }
+        .col-span-7{
+            grid-column: span 7; 
+            background-color: #eb3838;
+        }
+        .page1 {
+            padding-top: 15rem;
+            padding-bottom: 15rem;
+            text-align: center;
+        }
+
+        .page2 {
+            padding-top: 15rem;
+            padding-bottom: 15rem;
+            text-align: left;
+            align-items: left;
+            float: left;
+        }
+
+
+        nav ul {
+            font-family: bebas-neue, sans-serif;
+            padding-top: 5rem;
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            flex-flow: row wrap;
+            justify-content: center;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        nav li {
+            flex-grow: 1;
+        
+        }
+
+        .row {
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 8px;
+        }
+        .column {
+            flex: 50%;
+            max-width: 50%;
+            padding: 0 8px;
+          }
+          
+          .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+          }
+
+        .site-id {
+            grid-column: 2 / span 4;
+            background-color: #d007a8;
+            color: black;
+        }
+        .main { 
+            grid-column: 1 / span 12;
+            background-color: green;
+            padding-bottom: 15rem;
+        }
+
+        .icons ul {
+            padding-top: 5rem;
+            list-style-type: none;
+            display: flex;
+            margin: 10px 10px;
+            flex-flow: row wrap;
+            float: right;
+            padding: 2rem;
+        }
+
+        .icons ul li {
+            margin: 7px;
+        }
+        .copyright { 
+            grid-column: 9 / span 4;
+            background-color: aqua;
+        }
+}
+
+
+
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
