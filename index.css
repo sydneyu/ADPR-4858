@@ -1,11 +1,16 @@
+
+/* website colors  */
 :root {
     --primary-color: #AA8383;
-    --second-color: #007CBC;
+    --second-color: #e4c1c1;;
     --neutral-grey: #747e83;
     --neutral-light: #ffffff;
-    --highlight-color: #f5ba36;
+    --highlight-color: #cd7b7b;;
 
 }
+
+/* back to top button  */
+
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -20,21 +25,22 @@
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
     font-size: 18px; /* Increase font size */
+    font-family: bebas-neue, sans-serif;
+    letter-spacing: 0.1rem;
   }
   
   #myBtn:hover {
     background-color: white; /* Add a dark-grey background on hover */
     color: var(--primary-color);
+    transition: all 0.3s;
   }
-
-
-
-
 
 
 html {
     scroll-behavior: smooth;
   }
+
+/* end of back to top button  */
 
 * {
     box-sizing: border-box;
@@ -52,7 +58,8 @@ h1 {
     font-weight: 400;
     font-style: normal;
     font-size: 5rem;
-    color: var(--primary-color)
+    color: var(--primary-color);
+    letter-spacing: 0.3rem;
 }
 
 h2 {
@@ -133,24 +140,30 @@ img {
         }
         .col-span-6{
             grid-column: span 6; 
-            background-color: lavender;
+            /* background-color: lavender; */
+
         }
         .col-span-7{
             grid-column: span 7; 
             background-color: #eb3838;
         }
         .page1 {
-            padding-top: 15rem;
-            padding-bottom: 15rem;
+            padding-top: 10rem;
+            padding-bottom: 10rem;
             text-align: center;
         }
 
         .page2 {
-            padding-top: 15rem;
-            padding-bottom: 15rem;
+            padding-top: 10rem;
+            padding-bottom: 10rem;
             text-align: left;
-            align-items: left;
+            align-items: left; 
             float: left;
+        }
+
+        .centeralign {
+            padding-top: 10rem;
+            padding-bottom: 10rem;
         }
 
 
@@ -171,6 +184,9 @@ img {
         
         }
 
+        nav ul li {
+        }
+
         .row {
             text-align: center;
             display: flex;
@@ -189,17 +205,6 @@ img {
             width: 100%;
           }
 
-        .site-id {
-            grid-column: 2 / span 4;
-            background-color: #d007a8;
-            color: black;
-        }
-        .main { 
-            grid-column: 1 / span 12;
-            background-color: green;
-            padding-bottom: 15rem;
-        }
-
         .icons ul {
             padding-top: 5rem;
             list-style-type: none;
@@ -217,10 +222,55 @@ img {
             grid-column: 9 / span 4;
             background-color: aqua;
         }
+
+/* contact form */
+form { max-width:420px; margin:50px auto; 
+    }
+
+.feedback-input {
+  color:var(--neutral-grey);
+  font-family: Helvetica, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid var(--primary-color);
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
 }
 
+.feedback-input:focus { border:2px solid var(--primary-color); }
 
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
 
+[type="submit"] {
+  font-family: bebas-neue, sans-serif;
+  width: 100%;
+  background: var(--primary-color);
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:white;
+    color: var(--primary-color);
+ }
+}
 
 
 
