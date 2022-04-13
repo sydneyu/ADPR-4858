@@ -1,12 +1,11 @@
 
 /* website colors  */
 :root {
-    --primary-color: #AA8383;
-    --second-color: #e4c1c1;;
+    --primary-color: #ffffff;
+    --second-color: #AA076B;;
     --neutral-grey: #747e83;
     --neutral-light: #ffffff;
-    --highlight-color: #cd7b7b;;
-
+    --third-color: #61045F;;
 }
 
 /* back to top button  */
@@ -19,7 +18,7 @@
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: var(--primary-color); 
+    background-color: var(--second-color); 
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
@@ -31,7 +30,7 @@
   
   #myBtn:hover {
     background-color: white; /* Add a dark-grey background on hover */
-    color: var(--primary-color);
+    color: var(--second-color);
     transition: all 0.3s;
   }
 
@@ -49,7 +48,7 @@ html {
 
 body{
     margin: 0;
-    background-image:  linear-gradient(#FCD8D4, #FDF6F0, #F8E2CF, #FCD8D4, #F6C7AD);
+    background-image:  linear-gradient(#AA076B, #61045F, #AA076B);
 
 }
 
@@ -72,6 +71,7 @@ h2 {
 
 h3 {
     font-size: 1rem;
+    font-weight: 200;
     color: var(--primary-color);
     font-family: Helvetica, sans-serif;
     text-align: left;
@@ -154,16 +154,16 @@ img {
         }
 
         .page2 {
-            padding-top: 10rem;
-            padding-bottom: 10rem;
+            padding-top: 7.5rem;
+            padding-bottom: 7.5rem;
             text-align: left;
             align-items: left; 
             float: left;
         }
 
         .centeralign {
-            padding-top: 10rem;
-            padding-bottom: 10rem;
+            padding-top: 7.5rem;
+            padding-bottom: 7.5rem;
         }
 
 
@@ -177,6 +177,7 @@ img {
             justify-content: center;
             text-align: center;
             text-decoration: none;
+            color: var(--primary-color);
         }
         
         nav li {
@@ -259,7 +260,7 @@ textarea {
   border-radius:5px;
   border:0;
   cursor:pointer;
-  color:white;
+  color: var(--second-color);
   font-size:24px;
   padding-top:10px;
   padding-bottom:10px;
@@ -267,7 +268,7 @@ textarea {
   margin-top:-4px;
   font-weight:700;
 }
-[type="submit"]:hover { background:white;
+[type="submit"]:hover { background: var(--third-color);
     color: var(--primary-color);
  }
 }
