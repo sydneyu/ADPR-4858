@@ -50,8 +50,16 @@ html {
 body{
     margin: 0;
     background-image:  linear-gradient(#AA076B, #61045F, #AA076B);
+}
+
+.fa-brands {
+  width: 50px;
 
 }
+
+
+
+
 
 h1 {
     font-family: bebas-neue, sans-serif;
@@ -95,15 +103,46 @@ h4 {
 
 
 p, ul, ol {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     line-height: 1.75rem;
-    color: var(--neutral-light)
+    color: var(--neutral-light);
+}
+
+
+.alignleft {
+  text-align: left;
+}
+
+.circle {
+  justify-content: center;
+  max-width: 50%;
+  max-height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+
 }
 
 img {
     max-width: 100%;
 }
 
+.work:hover {
+
+}
+
+.hovertext {
+  opacity: 0;
+  margin-top: 0;
+  margin-bottom: 0.75em;
+
+}
+
+.hovertext:hover{
+  opacity: 100;
+  background-color: var(--neutral-light);
+  color: var(--third-color);
+  transition: all 0.3s;
+}
 
 
 
@@ -118,8 +157,7 @@ img {
 
 .container > * {
     grid-column: span 12;
-}
-                                                       
+}                            
 
 /* Desktop Layout */
 @media screen and (min-width: 40rem)
@@ -175,8 +213,7 @@ img {
         .col-span-6{
             grid-column: span 6; 
             /* background-color: lavender; */
-
-        }
+         }
         .col-span-7{
             grid-column: span 7; 
             background-color: #eb3838;
@@ -201,6 +238,7 @@ img {
             padding-top: 7.5rem;
             padding-bottom: 7.5rem;
         }
+
 
 
         nav ul {
@@ -255,7 +293,7 @@ form { max-width:420px; margin:50px auto;
     }
 
 .feedback-input {
-  color:var(--neutral-grey);
+  color:var(--neutral-light);
   font-family: Helvetica, sans-serif;
   font-weight:500;
   font-size: 18px;
@@ -353,7 +391,7 @@ on top of each other instead of next to each other */
   }
   .info-panel, .exper-panel, .edu-panel {
     font-size: 16px;
-    color: #666666;
+    color: var(--neutral-light);
     padding: 0.5em 1.5em;    
   }
   .skills-bar, .language-bar {
