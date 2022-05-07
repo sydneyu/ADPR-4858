@@ -108,6 +108,12 @@ p, ul, ol {
     color: var(--neutral-light);
 }
 
+h5 {
+  font-size: 1.25rem;
+  line-height: 2.75rem;
+  font-family: Helvetica, sans-serif;
+  color: var(--neutral-light);
+}
 
 .alignleft {
   text-align: left;
