@@ -122,7 +122,6 @@ h5 {
 .circle {
   justify-content: center;
   max-width: 50%;
-  max-height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 50%;
 
@@ -144,7 +143,7 @@ img {
 }
 
 .hovertext:hover{
-  opacity: 100;
+  opacity: 100%;
   background-color: var(--neutral-light);
   color: var(--third-color);
   transition: all 0.3s;
@@ -181,7 +180,7 @@ ul.galleryimages li img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) }
 
   p, ul, ol {
-    font-size: 3 rem;
+    font-size: 3rem;
     line-height: 2.75rem;
     color: var(--neutral-light);
 }
